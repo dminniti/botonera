@@ -84,15 +84,15 @@
 <div class="container py-5">
     <h1 class="mb-4">La botonera del Gordo</h1>
     <div class="button-grid">
-        <button class="btn-1">1</button>
-        <button class="btn-2">2</button>
-        <button class="btn-3">3</button>
-<!--        <button class="btn-4">4</button>-->
-<!--        <button class="btn-5">5</button>-->
-<!--        <button class="btn-6">6</button>-->
-<!--        <button class="btn-7">7</button>-->
-<!--        <button class="btn-8">8</button>-->
-<!--        <button class="btn-9">9</button>-->
+        <button class="btn-1">¡Cagón!</button>
+        <button class="btn-2">¡Es hoy!</button>
+        <button class="btn-3">No le da la Cabecita</button>
+        <button class="btn-4">JuaJua</button>
+        <button class="btn-5">Pomberito</button>
+        <button class="btn-6">Gordo Pelotudo</button>
+        <button class="btn-7">Manca Reventada</button>
+        <button class="btn-8">ÑamÑam</button>
+        <button class="btn-9">Ajuuu</button>
     </div>
 </div>
 
@@ -103,18 +103,17 @@
         "./audio/CagonOk.mp4",
         "./audio/EsHoyOk.mp4",
         "./audio/CabecitaOk.mp4",
-        "https://actions.google.com/sounds/v1/cartoon/boing.ogg",
-        "https://actions.google.com/sounds/v1/cartoon/clatter.ogg",
-        "https://actions.google.com/sounds/v1/cartoon/trombone.ogg",
-        "https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg",
-        "https://actions.google.com/sounds/v1/cartoon/boing.ogg",
-        "https://actions.google.com/sounds/v1/cartoon/clatter.ogg"
+        "./audio/Juajua.mp3",
+        "./audio/Pomberito.mp3",
+        "./audio/GordoPelotudo.mp3",
+        "./audio/MancaOK.mp3",
+        "./audio/NamOK.mp3",
+        "./audio/Ajuuu.mp3",
     ];
 
 
-
     // Crear objetos de sonido
-    const soundObjects = sounds.map(sound => new Howl({ src: [sound], html5: true }));
+    const soundObjects = sounds.map(sound => new Howl({src: [sound], html5: true}));
 
     // Vincular botones a sonidos
     document.querySelectorAll(".button-grid button").forEach((button, index) => {
